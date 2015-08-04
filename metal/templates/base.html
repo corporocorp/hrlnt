@@ -2,12 +2,32 @@
 <html lang="en">
 <head>
 	{% block head %}
+
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/bootstrap.min.css") }}"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- bootstrap theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- totally brutal google font -->
+	<link href='//fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+
+	<!-- local css -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='skin/css/style.css') }}"> 
 
-	<link href='//fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-	<script type="text/javascript" src="{{ url_for('static', filename='js/lib/jquery.js') }}"></script>
+	<!-- jquery -->
+	<script type="text/javascript" src="{{ url_for("static", filename="js/jquery.min.js") }}"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- bootstrap js -->
+	<script type="text/javascript" src="{{ url_for("static", filename="js/bootstrap.min.js") }}"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
+
+	<!-- local js -->
 	<script type="text/javascript" src="{{ url_for('static', filename='js/metal.js') }}"></script>
+
+	<!-- awaken the kraken of foolishness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>{% block title %}{% endblock %} - Egad</title>
 	{% endblock %}
