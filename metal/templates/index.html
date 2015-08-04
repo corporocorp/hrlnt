@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Awesome Black Metal Generator{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+{{g.song|safe}}
+{% endblock %}
+
+

@@ -1,0 +1,56 @@
+a, h1, h2, body, .skull, .baphomet, .tiny {
+	font-family: 'Black Ops One', cursive;
+	color: black;
+}
+
+h1 {
+	font-size: 1.25em;
+}
+
+#content, #footer {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+}
+
+.song {
+	padding-left: .25em;
+	border: solid black 1px;
+}
+
+.skull, .baphomet {
+	cursor: pointer;
+	float: right;
+ 	background-image: url(//upload.wikimedia.org/wikipedia/commons/5/53/Skull_and_crossbones.svg);
+ 	background-size: 51px 49px;
+	width: 51px;
+	height: 49px;
+}
+
+.baphomet {
+	background-image: url(//upload.wikimedia.org/wikipedia/commons/a/a4/Baphomet.png);
+	background-size: 74px 109px;
+	width: 74px;
+	height: 109px;
+}
+
+.phoqueue {
+	float: right;
+	text-align: center;
+	font-size: .75em;
+	color: red;
+	text-shadow: 2px 2px white;
+	opacity: 0.25;
+}
+
+.tiny {
+	font-size: .75em;
+}
+
+.metallic_verse {
+	margin-top: 2em;
+}
+
+.evil_line {
+	line-height: 40%;
+}
