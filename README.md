@@ -1,11 +1,11 @@
 # hrlnt 
-Several years ago I was making a pest of my self to Ian Christie: https://en.wikipedia.org/wiki/Sound_of_the_Beast. I'm not a big metal fan, so I was a total ignoramus about anything south of Mötorhead. Christie's chapters on the weird church-burning crazoids involved in the Black Metal scene was so compelling, and the quoted lyrics so absolutely nuts that I thought "hey, I'll make him a toy death metal lyrics generator". I kind of did, but it was weak, and his site was in PHP, so . . .
+**hrlnt** creates metal lyrics from dante's inferno, and tourettes some cool heaviness.
 
-A couple of years later one of my cow-orkers turned me on to heroku, I wanted to learn some of the basics, and I still had the code for the stupid thing on a backup drive. Cue the Six Million Dollar Man theme. I cleaned some stuff up, changed the name to something web 2.9.b3 and now you can play random metal mad-libs, too. 
+Several years ago I was making a gibbering, fanboy pest of my self to Ian Christie: https://en.wikipedia.org/wiki/Sound_of_the_Beast. I'm not a big metal fan, so I was a total ignoramus about anything south of Mötorhead. Christie's chapters on the weird church-burning crazoids involved in the Black Metal scene were so compelling, and the quoted lyrics so absolutely nuts that I thought "hey, I'll make him a toy death metal lyrics generator". I kind of did, but it was weak, and his site was in PHP and I'm a python bigot, so . . .
 
-**hrlnt** creates metal lyrics from dante's inferno, and tourettes some cool heaviness from epthitets.txt.
+A couple of years later one of my co-workers turned me on to heroku, I wanted to learn some of the basics, and I still had the code for the stupid thing on a backup drive. Cue the Six Million Dollar Man theme. I cleaned some stuff up, changed the name to something web 2.9.b3 and now you can play random metal mad-libs, too. 
 
-This is too lame, and I am too cheap for an actual domain:
+This is too lame, and I am too cheap, for an actual domain:
 
 https://very-metal.herokuapp.com/
 
