@@ -10,6 +10,7 @@ with open("inferno.txt", "r") as f:
 with open("epithets.txt", "r") as f:
     EPITHETS = [i.strip() for i in f.readlines()]
 
+# default brutality. Brutal.
 SONG = {
     "stanzas": 5,
     "lines": 3
