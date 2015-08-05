@@ -12,6 +12,9 @@ app.config.from_object("metalconfig")
 api = restful.Api(app)
 
 class JSong(object):
+    """
+    base class for producing the various song objects.
+    """
 
     def epithet(self):
         """get a random line from EPITHETS in config and return"""
@@ -45,6 +48,9 @@ class JSong(object):
         return song
 
 class XMHell(JSong):
+    """
+    Build XML song.
+    """
     def song(self):
         """Assemble stanza() lists into an xml song object"""
         song = ET.Element("song")
@@ -62,6 +68,10 @@ class XMHell(JSong):
         return f.getvalue()
 
 class HTMHell(JSong):
+    """
+    Build song in HTML format with hard-coded classes, because I'm a lazy, lazy,
+    lazy man.
+    """
     def song(self):
         """Assemble stanza() lists into an xml song object"""
         song = ET.Element("div")
@@ -93,6 +103,11 @@ class Flies(restful.Resource):
     """Lord of, The"""
 
     def get(self):
+        """
+        Note that we have to use make_response to output the correct
+        content-type of application/xml, since flask-restful defaults
+        to json.
+        """
         song = XMHell()
         response = make_response(song.song())
         response.headers["content-type"] = "application/xml"
@@ -102,7 +117,9 @@ class Satin(restful.Resource):
     """It ain't evil if it's spelled right"""
 
     def get(self):
-        """only providing a GET method"""
+        """
+        Same as the get in Flies, only outputting text/html
+        """
         song = HTMHell()
         response = make_response(song.song())
         response.headers["content-type"] = "text/html"
@@ -119,7 +136,7 @@ def index():
     g.song = song.song()
     return render_template("index.html")
 
-# this template uses jquery to access the api
+# this template uses jquery to access the html api
 @app.route("/fromapi")
 def fromapi():
     return render_template("fromapi.html")
