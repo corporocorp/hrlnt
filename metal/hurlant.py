@@ -7,6 +7,7 @@ from io import BytesIO
 import xml.etree.ElementTree as ET
 from flask import Flask, render_template, make_response, request, url_for, g
 from flask.ext import restful
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 app.config.from_object("metalconfig")

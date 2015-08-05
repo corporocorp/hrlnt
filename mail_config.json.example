@@ -1,0 +1,7 @@
+{
+	"MAIL_SERVER": "smtp.gmail.com",
+	"MAIL_PORT": "456",
+	"MAIL_USE_SSL": true,
+	"MAIL_USERNAME": "youremailaddress@google.com",
+	"MAIL_PASSWORD": "correct horse battery staple"
+}
